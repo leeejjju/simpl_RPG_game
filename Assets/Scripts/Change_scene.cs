@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Change_scene : MonoBehaviour
-{
+
+public class Change_scene : MonoBehaviour{
+
+    
     public void to_store(){
         SceneManager.LoadScene("village_store");
     }
@@ -30,15 +32,5 @@ public class Change_scene : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }
