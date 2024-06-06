@@ -41,7 +41,8 @@ public class IntroToVillage : MonoBehaviour
             j.color = new Color(j.color.r, j.color.g, j.color.b, j.color.a - (Time.deltaTime / t));
             yield return null;
         }
-        SceneManager.LoadScene("button_UI");
+        // SceneManager.LoadScene("button_UI");
+        SceneManager.LoadScene("login");
     }
 
 }

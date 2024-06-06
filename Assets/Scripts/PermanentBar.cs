@@ -9,6 +9,8 @@ public class PermanentBar : MonoBehaviour
     private static PermanentBar instance;
     public string CurrentSceneName { get; private set; }
     [SerializeField] private TextMeshProUGUI messageBox;
+
+
     private void Awake()
     {
         if (instance != null)
@@ -16,6 +18,7 @@ public class PermanentBar : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
         SceneManager.sceneLoaded += OnSceneLoaded;
         DontDestroyOnLoad(gameObject);
@@ -29,4 +32,5 @@ public class PermanentBar : MonoBehaviour
         messageBox.text = CurrentSceneName;
         Debug.Log("Current Scene: " + CurrentSceneName);
     }
+    
 }
